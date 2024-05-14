@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Pelikan project\\Pelikan_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5768A821-9A01-4432-890D-3D921E6947BF}|Pelikan_Project\\Pelikan_Project.csproj|C:\\Pelikan project\\Pelikan_Project\\Pelikan_Project\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5768A821-9A01-4432-890D-3D921E6947BF}|Pelikan_Project\\Pelikan_Project.csproj|solutionrelative:Pelikan_Project\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5768A821-9A01-4432-890D-3D921E6947BF}|Pelikan_Project\\Pelikan_Project.csproj|c:\\pelikan project\\pelikan_project\\pelikan_project\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5768A821-9A01-4432-890D-3D921E6947BF}|Pelikan_Project\\Pelikan_Project.csproj|solutionrelative:pelikan_project\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5768A821-9A01-4432-890D-3D921E6947BF}|Pelikan_Project\\Pelikan_Project.csproj|c:\\pelikan project\\pelikan_project\\pelikan_project\\datamanager\\inspectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5768A821-9A01-4432-890D-3D921E6947BF}|Pelikan_Project\\Pelikan_Project.csproj|solutionrelative:pelikan_project\\datamanager\\inspectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5768A821-9A01-4432-890D-3D921E6947BF}|Pelikan_Project\\Pelikan_Project.csproj|c:\\pelikan project\\pelikan_project\\pelikan_project\\datamanager\\operatormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5768A821-9A01-4432-890D-3D921E6947BF}|Pelikan_Project\\Pelikan_Project.csproj|solutionrelative:pelikan_project\\datamanager\\operatormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5768A821-9A01-4432-890D-3D921E6947BF}|Pelikan_Project\\Pelikan_Project.csproj|c:\\pelikan project\\pelikan_project\\pelikan_project\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5768A821-9A01-4432-890D-3D921E6947BF}|Pelikan_Project\\Pelikan_Project.csproj|solutionrelative:pelikan_project\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5768A821-9A01-4432-890D-3D921E6947BF}|Pelikan_Project\\Pelikan_Project.csproj|C:\\Pelikan project\\Pelikan_Project\\pelikan_project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5768A821-9A01-4432-890D-3D921E6947BF}|Pelikan_Project\\Pelikan_Project.csproj|solutionrelative:pelikan_project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InspectionManager.cs",
+              "DocumentMoniker": "C:\\Pelikan project\\Pelikan_Project\\Pelikan_Project\\DataManager\\InspectionManager.cs",
+              "RelativeDocumentMoniker": "Pelikan_Project\\DataManager\\InspectionManager.cs",
+              "ToolTip": "C:\\Pelikan project\\Pelikan_Project\\Pelikan_Project\\DataManager\\InspectionManager.cs",
+              "RelativeToolTip": "Pelikan_Project\\DataManager\\InspectionManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T06:27:34.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Pelikan project\\Pelikan_Project\\Pelikan_Project\\Startup.cs",
+              "RelativeDocumentMoniker": "Pelikan_Project\\Startup.cs",
+              "ToolTip": "C:\\Pelikan project\\Pelikan_Project\\Pelikan_Project\\Startup.cs",
+              "RelativeToolTip": "Pelikan_Project\\Startup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T06:16:13.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Pelikan project\\Pelikan_Project\\Pelikan_Project\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Pelikan_Project\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Pelikan project\\Pelikan_Project\\Pelikan_Project\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Pelikan_Project\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAIwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T06:14:29.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Pelikan project\\Pelikan_Project\\Pelikan_Project\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pelikan_Project\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Pelikan project\\Pelikan_Project\\Pelikan_Project\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Pelikan_Project\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAM8AAAAAAAAAAAAcwN8AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T06:14:33.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Pelikan project\\Pelikan_Project\\Pelikan_Project\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Pelikan_Project\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Pelikan project\\Pelikan_Project\\Pelikan_Project\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Pelikan_Project\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T07:45:24.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OperatorManager.cs",
+              "DocumentMoniker": "C:\\Pelikan project\\Pelikan_Project\\Pelikan_Project\\DataManager\\OperatorManager.cs",
+              "RelativeDocumentMoniker": "Pelikan_Project\\DataManager\\OperatorManager.cs",
+              "ToolTip": "C:\\Pelikan project\\Pelikan_Project\\Pelikan_Project\\DataManager\\OperatorManager.cs",
+              "RelativeToolTip": "Pelikan_Project\\DataManager\\OperatorManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAB5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T06:27:16.324Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

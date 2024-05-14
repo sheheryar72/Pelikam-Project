@@ -1,0 +1,141 @@
+﻿<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                        <div class="mb-md-5 mt-md-4 pb-2">
+
+                            <h2 class="fw-bold mb-2 text-uppercase">Register</h2>
+                            <p class="text-white-50 mb-5">Please enter your details</p>
+
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div class="form-outline form-white text-left">
+                                        <label class="form-label" for="typeEmailX">Operator ID</label>
+                                        <input type="number" name="OperatorID" id="OperatorID" maxlength="5" class="form-control form-control-lg" placeholder="Operator ID" required />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div class="form-outline form-white text-left">
+                                        <label class="form-label" for="typeEmailX">Name</label>
+                                        <input type="text" name="Name" id="Name" class="form-control form-control-lg" placeholder="Name" required />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div class="form-outline form-white text-left">
+                                        <label class="form-label" for="typeEmailX">Department</label>
+                                        <input type="Department" name="Department" id="Department" class="form-control form-control-lg" placeholder="Department" required />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div class="form-outline form-white text-left">
+                                        <label class="form-label" for="typePasswordX">Password</label>
+                                        <input type="password" name="Password" id="Password" class="form-control form-control-lg" placeholder="Password" required />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div class="form-outline form-white text-left">
+                                        <label class="form-label" for="typePasswordX">Designation</label>
+                                        <input type="text" name="Designation" id="Designation" class="form-control form-control-lg" placeholder="Designation" required />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-light btn-lg px-5" id="register_btn">Register</button>
+
+                        </div>
+
+                        <div>
+                            <p class="mb-0">
+                                Already have an account? <a href="/Operator/Login" class="text-white-50 fw-bold">Login</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+
+    document.getElementById("OperatorID").addEventListener("input", function () {
+        maxLengthCheck(this)
+    })
+
+    function maxLengthCheck(object) {
+        if (object.value.length > object.maxLength) {
+            object.value = object.value.slice(0, object.maxLength);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const register_btn = document.querySelector('#register_btn');
+
+        register_btn.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const OperatorID = document.getElementById('OperatorID').value;
+            const Name = document.getElementById('Name').value;
+            const Department = document.getElementById('Department').value;
+            const Password = document.getElementById('Password').value;
+            const Designation = document.getElementById('Designation').value;
+
+            console.log('Department: ', Department)
+            console.log('password: ', Password)
+
+            if (Department != '' && Password != '' && Name != '' && Designation != '' && OperatorID != '') {
+
+                $.post({
+                    url: `/Operator/InserOperator`,
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        OperatorID: OperatorID, Name: Name, Department: Department, Password: Password, Designation: Designation
+                    }),
+                    dataType: 'json',
+                    success: function (response) {
+                        console.log('respponse: ', response)
+                        if (response.status == 400) {
+                            alert("Failed to register Operator please try again!")
+                        }
+                        if (response.status == 200) {
+                            //localStorage.setItem("OperatorID", response.data.operatorID)
+                            alert("Successfully Registerd!")
+                            window.location.href = '/Operator/Login'
+                        }
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+
+            } else {
+                alert("All fields are required please fill all input fields!")
+            }
+
+        });
+    });
+
+
+</script>
+
+
+
+

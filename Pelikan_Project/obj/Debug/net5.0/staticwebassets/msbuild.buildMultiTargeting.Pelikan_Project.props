@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Pelikan_Project.props" />
+</Project>

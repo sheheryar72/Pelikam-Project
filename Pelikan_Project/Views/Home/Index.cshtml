@@ -184,7 +184,7 @@
                 background-color: #495057; /* Full black hover color */
             }
 
-        p#inspection_counter {
+        p.inspection_counter_class {
             font-weight: 600;
             font-size: 30px;
             margin-top: 25px;
@@ -211,7 +211,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <p id="inspection_counter">Inspection Counter: 0</p>
+                    <p class="inspection_counter_class" id="inspection_counter">Inspection Counter: 0</p>
                 </div>
                 <div class="col-md-2">
                     <div class="form-group">
@@ -236,6 +236,12 @@
                     <div class="form-group">
                         <button type="button" id="reset_btn" class="btn btn-lg btn-success form-control mt-4">Reset</button>
                     </div>
+                </div>
+                <div class="col-md-4">
+                    <p class="inspection_counter_class" id="inspection_check">Total Check: 0</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="inspection_counter_class" id="inspection_defect">Total Defect: 0</p>
                 </div>
             </div>
 
@@ -355,26 +361,30 @@
         "Extra_Defect": 0
     }
 
-    let total_inspection = 0, inspection_counter = 0;
+    let total_inspection = 0, inspection_counter = 0, inspection_check = 0, inspection_defect = 0;
 
     const operation_class = document.querySelectorAll(".operation_class");
 
     document.getElementById("Inspection_Pass").addEventListener("click", function () {
         total_inspection += 1;
         inspection_counter += 1;
+        inspection_check += 1;
         document.getElementById("inspection_counter").innerText = `Inspection Counter: ${inspection_counter}`
+        document.getElementById("inspection_check").innerText = `Total Check: ${inspection_check}`
     })
 
     document.getElementById("reset_btn").addEventListener("click", function () {
         total_inspection = 0;
         inspection_counter = 0;
+        inspection_check = 0, inspection_defect = 0;
 
         for (let key in operation_obj) {
             if (operation_obj.hasOwnProperty(key)) {
                 operation_obj[key] = 0;
             }
         }
-
+        document.getElementById("inspection_check").innerText = `Total Check: ${inspection_check}`
+        document.getElementById("inspection_defect").innerText = `Total Defect: ${inspection_defect}`
         document.getElementById("inspection_counter").innerText = `Inspection Counter: ${inspection_counter}`
     })
 
@@ -388,6 +398,9 @@
 
             inspection_counter += 1;
             document.getElementById("inspection_counter").innerText = `Inspection Counter: ${inspection_counter}`
+
+            inspection_defect += 1;
+            document.getElementById("inspection_defect").innerText = `Total Defect: ${inspection_defect}`
         });
     });
 
@@ -422,6 +435,7 @@
                     }
                     if (response.status == 200) {
                         total_inspection = 0;
+                        inspection_check = 0, inspection_defect = 0;
 
                         for (let key in operation_obj) {
                             if (operation_obj.hasOwnProperty(key)) {
